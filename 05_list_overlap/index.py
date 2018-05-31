@@ -24,6 +24,7 @@ for number_a in longest_list:
         if number_a == number_b:
             new_list.append(number_a)
 
+# If there are overlapping numbers, print them out. If there's not, state it.
 if len(new_list) == 0:
     print('There are no numbers that overlap between the two lists.')
 else:
