@@ -21,6 +21,7 @@ begin.lower()
 # Check the value of begin and determine what to do next
 while begin != 'yes':
     if begin == 'no':
+        print('Sorry to see you go! Come back soon!')
         sys.exit(1)
     else:
         print('I\'m sorry. I didn\'t understand that input.')
