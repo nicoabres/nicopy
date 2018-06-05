@@ -81,7 +81,8 @@ while not stop:
     while play_again != 'yes':
         if play_again == 'no':
             print('Thanks for playing!')
-            sys.exit(1)
+            stop = True
+            break
         else:
             print('I\'m sorry. I didn\'t understand that input.')
             play_again = input('That was fun! Would you like to play another game? <yes/no>: ')
