@@ -1,6 +1,6 @@
 # Set our import statements
-import sys
-import random
+import sys              # Used to exit gracefully
+import random           # Used to randomly select a element from a list
 
 # Since we are going to be using an infinite loop, let's set a variable to watch
 stop = False
