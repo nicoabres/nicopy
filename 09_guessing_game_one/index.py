@@ -20,8 +20,8 @@ print('The computer has choosen its number!')
 # Set a variable and start a loop to keep the game going until the player says to stop
 stop = False
 while not stop:
-    # Prompt the user to enter a number that they think the computer choose
-    players_number = input('Please enter the number you think the computer choose, or type "exit" to end the game: ')
+    # Prompt the user to enter a number that they think the computer chose
+    players_number = input('Please enter the number you think the computer chose, or type "exit" to end the game: ')
 
     # Check to see if the number enderd by the user is actually a number
     numberCheck = True
