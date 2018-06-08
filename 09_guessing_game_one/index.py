@@ -19,6 +19,7 @@ print('The computer has choosen its number!')
 
 # Set a variable and start a loop to keep the game going until the player says to stop
 stop = False
+number_of_guesses = 0
 while not stop:
     # Prompt the user to enter a number that they think the computer chose
     players_number = input('Please enter the number you think the computer chose, or type "exit" to end the game: ')
@@ -45,8 +46,12 @@ while not stop:
     # Check if the number is higher, lower, exact, or if the user wants to stop
     if computers_number > players_number:
         print('The computer\'s number is higher, try again!')
+        number_of_guesses += 1
+        print('Number of guesses: ' + str(number_of_guesses))
     elif computers_number < players_number:
         print('The computer\'s number is lower, try again!')
+        number_of_guesses += 1
+        print('Number of guesses: ' + str(number_of_guesses))
     else:
-        print('Congrats! You win! The computer\'s number was: ' + str(computers_number))
+        print('Congrats! You win! The computer\'s number was: ' + str(computers_number) + '. You guessed ' + str(number_of_guesses) + ' times!')
         stop = True
