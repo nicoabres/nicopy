@@ -12,7 +12,7 @@ def check_if_number(user_number):
 
 # Define a function to check if the input is prime or not
 def check_if_prime(user_number):
-    if int(user_number) % 2 == 0 and int(user_number) > 2:
+    if user_number % 2 == 0 and user_number > 2:
         print('The number: ' + str(user_number) + ' is not prime!')
     else:
         print('The number: ' + str(user_number) + ' is prime!')
@@ -25,9 +25,9 @@ is_number = check_if_number(user_number)
 
 # If the users number is actually a number, check if it's prime. If it's not a number, ask again.
 if is_number:
-    check_if_prime(user_number)
+    check_if_prime(int(user_number))
 else:
     while is_number is False:
         user_number = input('The entry you entered is not a number. Please try again: ')
         is_number = check_if_number(user_number)
-    check_if_prime(user_number)
+    check_if_prime(int(user_number))
