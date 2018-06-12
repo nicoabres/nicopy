@@ -28,6 +28,10 @@ if is_number:
     check_if_prime(int(user_number))
 else:
     while is_number is False:
-        user_number = input('The entry you entered is not a number. Please try again: ')
-        is_number = check_if_number(user_number)
+        if user_number.startswith('-'):
+            user_number = input('Please do not use a negative number. Please try again: ')
+            is_number = check_if_number(user_number)
+        else:
+            user_number = input('The entry you entered is not a number. Please try again: ')
+            is_number = check_if_number(user_number)
     check_if_prime(int(user_number))
